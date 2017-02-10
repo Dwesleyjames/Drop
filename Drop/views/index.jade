@@ -1,0 +1,21 @@
+extends layout
+
+block header
+  script(src="javascripts/register.js")
+
+block content
+  - if(error)
+    div.error #{error}
+  a.container
+  a.row
+  img.center-block(src= "images/drop.png")
+  div(align='center')
+    form(action="/login", method="post")
+        div.form-group
+            label(for="username") Username
+            input.form-control.limitwidth(type="text", name="username")
+        div.form-group
+            label(for="password") Password
+            input.form-control.limitwidth(type="password", name="password")
+        button.btn.btn-default(type="submit") Login
+        button#register.btn.btn-warning(type="button") Register

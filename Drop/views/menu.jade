@@ -1,0 +1,25 @@
+extends layout
+
+block header
+  script(src="javascripts/register.js")
+
+block content
+  a.container
+  a.row
+  img.center-block(src= "images/drop.png", style='width:250px;height:250px;')
+  
+  p #{title}
+  
+  div(align='center')
+
+    form(action="/notes", method="get")
+      button.btn.btn-info.btn-lg(type="submit") Notes
+    div.form-group
+    form(action="/logout", method="post")
+      button.btn.btn-warning.btn-lg(type="submit") Logout
+    div.form-group
+    form(action="/chat", method="get")
+      button.btn.btn-primary.btn-lg(type="submit") chatroom
+    div.form-group
+    form(action="/voice", method="get")
+      button.btn.btn-danger.btn-lg(type="submit") Voice

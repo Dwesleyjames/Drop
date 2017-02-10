@@ -1,0 +1,32 @@
+doctype html
+//
+  *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+  *
+  *  Use of this source code is governed by a BSD-style license
+  *  that can be found in the LICENSE file in the root of the source
+  *  tree.
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='WebRTC code samples')
+    meta(name='viewport', content='width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1')
+    meta(itemprop='description', content='Client-side WebRTC code samples')
+    meta(itemprop='image', content='../../../images/webrtc-icon-192x192.png')
+    meta(itemprop='name', content='WebRTC code samples')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta#theme-color(name='theme-color', content='#ffffff')
+    base(target='_blank')
+    title VoiceChat
+    
+    
+  body
+    #container
+      h1
+        
+      audio#gum-local(controls, autoplay)
+      p Warning: if you're not using headphones, pressing play will cause feedback.
+      
+    script(src='https://webrtc.github.io/adapter/adapter-latest.js')
+    script(src='javascripts/common.js')
+    script(src='javascripts/main.js')
+    script(src='javascripts/ga.js')
